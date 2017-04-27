@@ -1,0 +1,7 @@
+.border-1 {
+  border-bottom: 2px solid red;
+}
+div {
+  color: blue;
+  border-bottom: 2px solid red;
+}

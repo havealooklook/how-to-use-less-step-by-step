@@ -12,13 +12,17 @@ gulp.task('less',function(){
 	//编译到css文件夹
 	.pipe(gulp.dest('css/'));
 });
+//less文件变化时，调用less任务
+gulp.task('watchless',function(){
+	gulp.watch('less/*.less',['less']);
+});
 
-// 监视 less 文件的改动，如果发生变更，运行 'less' 任务，并且重载文件
-gulp.task('serve',['less'],function(){
+// 监视 css 文件的改动，如果发生变更，并且重载文件
+gulp.task('serve',function(){
 	browserSync({
 		server : {
 			baseDir : 'less-practice'
 		}
 	});
-	gulp.watch('./*.html','less/*.less',['less']);
+	gulp.watch(['*.html','css/**/*.css','js/**/*.js'],{cwd: 'less-practice'},reload);
 });
