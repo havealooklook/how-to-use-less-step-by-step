@@ -1,0 +1,12 @@
+/*less运算
+*任何数字、颜色、变量都可以参与运算
+*/
+.div1 {
+  /*乘法、加法*/
+  font-size: 20px;
+  color: #ffb17a;
+}
+.div2 {
+  font-size: 30px;
+  color: #87be87;
+}
