@@ -1,0 +1,19 @@
+/*命名空间（namespaces）可以编组常用的变量和混合样式*/
+#bundle .article-text {
+  font-size: 14px;
+  color: blue;
+  line-height: 25px;
+  font-style: normal;
+}
+#bundle .em {
+  font-size: 20px;
+}
+.p1 {
+  font-size: 14px;
+  color: blue;
+  line-height: 25px;
+  font-style: normal;
+}
+.p1 em {
+  font-size: 20px;
+}
