@@ -1,0 +1,13 @@
+/*LESS中作用域的工作方式类似于JS中的作用域，都是逐层向上查找同名变量*/
+@color : red;
+.div1{
+	@color : blue;
+	.p{
+		color : @color;
+	}
+}
+.div2{
+	.p{
+		color : @color;
+	}
+}
